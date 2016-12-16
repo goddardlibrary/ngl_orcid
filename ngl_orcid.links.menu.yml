@@ -1,0 +1,28 @@
+# The ORCID configuration page
+ngl_orcid.form:
+  title: Configure NGL ORCID
+  description: Settings for ORCID Configuration.
+  route_name: ngl_orcid.form
+
+# The ORCID landing page
+ngl_orcid.content:
+  title: 'ORCID Search'
+  description: 'Search ORCID using the API'
+  route_name: ngl_orcid.content
+  weight: 100
+
+# The ORCID search by ID page
+ngl_orcid.id:
+  title: 'ORCID Search by ID'
+  description: 'Search ORCID by ID using the API'
+  parent: ngl_orcid.content
+  route_name: ngl_orcid.id
+  weight: 100
+
+# The ORCID search by name page
+ngl_orcid.name:
+  title: 'ORCID Search by Name'
+  description: 'Search ORCID by Name using the API'
+  parent: ngl_orcid.content
+  route_name: ngl_orcid.name
+  weight: 100

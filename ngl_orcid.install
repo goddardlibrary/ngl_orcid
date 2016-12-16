@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Installation functions for NGL ORCID module.
+ */
+
+use Drupal\User\RoleInterface;
+
+/**
+ * Implements hook_install().
+ */
+function ngl_orcid_install() {
+
+  // Looks for the permission and enable it
+  user_role_change_permissions(
+    RoleInterface::ANONYMOUS_ID,
+    array(
+      'display orcid search results' => TRUE,
+    )
+  );
+
+}

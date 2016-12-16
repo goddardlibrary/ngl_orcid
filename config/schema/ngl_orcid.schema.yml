@@ -1,0 +1,13 @@
+ngl_orcid.settings:
+  type: config_object
+  label: 'NGL ORCID settings'
+  mapping:
+    ngl_orcid:
+      type: mapping
+      mapping:
+        client_id:
+          type: text
+          label: 'Client ID:'
+        client_secret:
+          type: text
+          label: 'Client Secret:'

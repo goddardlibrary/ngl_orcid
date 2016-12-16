@@ -1,0 +1,16 @@
+# The ORCID landing page
+ngl_orcid.content:
+  route_name: ngl_orcid.content
+  base_route: ngl_orcid.content
+  title: 'Search'
+
+# The ORCID search by ID page
+ngl_orcid.id:
+  route_name: ngl_orcid.id
+  base_route: ngl_orcid.content
+  title: 'Search by ID'
+
+ngl_orcid.name:
+  route_name: ngl_orcid.name
+  base_route: ngl_orcid.content
+  title: 'Search by Name'

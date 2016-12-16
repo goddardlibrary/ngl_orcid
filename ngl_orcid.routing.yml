@@ -1,0 +1,35 @@
+# Form for configuring OrcID API
+ngl_orcid.form:
+  path: 'admin/config/development/ngl_orcid'
+  defaults:
+    _form: 'Drupal\ngl_orcid\Form\OrcidForm'
+    _title: 'ngl_orcid settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+# The ORCID landing page
+ngl_orcid.content:
+  path: '/orcid/search'
+  defaults:
+    _controller: '\Drupal\ngl_orcid\Controller\OrcidController::content'
+    _title: 'ORCID'
+  requirements:
+    _permission: 'display orcid search results'
+
+# The ORCID search by ID page
+ngl_orcid.id:
+  path: '/orcid/search/id'
+  defaults:
+    _form: '\Drupal\ngl_orcid\Form\OrcidIDSearchForm'
+    _title: 'Search by ID'
+  requirements:
+    _permission: 'display orcid search results'
+
+# The ORCID search by name page
+ngl_orcid.name:
+  path: '/orcid/search/name'
+  defaults:
+    _form: '\Drupal\ngl_orcid\Form\OrcidNameSearchForm'
+    _title: 'Search by Name'
+  requirements:
+    _permission: 'display orcid search results'

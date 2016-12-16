@@ -1,0 +1,8 @@
+name: NGL ORCID
+description: NASA Goddard Library ORCID Module. Used to retrieve data from ORCID.
+package: NASA Goddard Library
+type: module
+core: 8.x
+configure: ngl_orcid.form
+dependencies:
+  - devel

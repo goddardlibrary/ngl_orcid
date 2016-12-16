@@ -1,0 +1,17 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ngl_orcid_help($route_name, RouteMatchInterface $route_match) {
+
+  switch ($route_name) {
+    case 'help.page.ngl_orcid':
+      return t("
+        <h2>NGL ORCID API Testing for Drupal.</h2>
+      ");
+  }
+
+}
